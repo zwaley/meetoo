@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园角色测试 - 你是哪种人？</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 校园角色测试</h1>
+            <p class="subtitle">通过5个问题，看看你在校园中是什么角色</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div id="start-screen" class="screen active">
+                <div class="welcome-card">
+                    <h2>欢迎参加测试</h2>
+                    <p>这是一个娱乐性质的角色测试，通过回答5个问题来判断你的校园角色类型。</p>
+                    <p class="warning">⚠️ 本测试纯属娱乐，请勿对号入座</p>
+                    <button id="start-btn" class="btn btn-primary">开始测试</button>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div class="question-card">
+                    <h3 id="question-number">问题 1/5</h3>
+                    <p id="question-text"></p>
+                    <div id="options-container" class="options"></div>
+                </div>
+            </div>
+
+            <div id="result-screen" class="screen">
+                <div class="result-card">
+                    <div id="result-icon" class="result-icon"></div>
+                    <h2 id="result-title"></h2>
+                    <p id="result-description"></p>
+                    <div class="result-actions">
+                        <button id="restart-btn" class="btn btn-secondary">重新测试</button>
+                        <button id="share-btn" class="btn btn-primary">分享结果</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
