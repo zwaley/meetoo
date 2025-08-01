@@ -325,7 +325,7 @@ function shareResult() {
         });
     } else {
         // 复制到剪贴板
-        const shareText = `我在校园角色测试中获得了：${result.title}！${result.description} 快来测试：https://zwaley.github.io/meetoo/`;
+        const shareText = `我在校园角色测试中获得了：${result.title}！快来测试看看你是什么角色吧！\n\n快来测试：https://zwaley.github.io/meetoo/`;
         navigator.clipboard.writeText(shareText).then(() => {
             alert('结果已复制到剪贴板！');
         }).catch(() => {
