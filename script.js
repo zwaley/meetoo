@@ -320,12 +320,12 @@ function shareResult() {
     if (navigator.share) {
         navigator.share({
             title: '校园角色测试结果',
-            text: `我在校园角色测试中获得了：${result.title}！快来测试看看你是什么角色吧！`,
-            url: window.location.href
+            text: `我在校园角色测试中获得了：${result.title}！快来测试看看你是什么角色吧！https://zwaley.github.io/meetoo/`,
+            url: 'https://zwaley.github.io/meetoo/'
         });
     } else {
         // 复制到剪贴板
-        const shareText = `我在校园角色测试中获得了：${result.title}！${result.description}`;
+        const shareText = `我在校园角色测试中获得了：${result.title}！${result.description} 快来测试：https://zwaley.github.io/meetoo/`;
         navigator.clipboard.writeText(shareText).then(() => {
             alert('结果已复制到剪贴板！');
         }).catch(() => {
